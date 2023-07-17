@@ -6,3 +6,8 @@ Affiliations: University of Sheffield
 
 Conference Name: MICCAI 2023
 
+# Proposed networks
+![](images/i2.png)
+
+# Results
+![](images/i2.png)
