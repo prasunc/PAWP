@@ -7,7 +7,7 @@ Affiliations: University of Sheffield
 Conference Name: MICCAI 2023
 
 # Proposed Pipeline
-![](images/i2.PNG)
+![](images/i1.PNG)
 
 # Results
 ![](images/i2.PNG)
