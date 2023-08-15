@@ -26,6 +26,7 @@ file_format = cfg.DATASET.FILE_FORAMT
 
 landmark='fc_landmarks.csv'
 landmark_file=pd.read_csv(landmark, index_col="subject")
+landmark1=landmark_file.iloc[:, :-1].values
 list_of_paths=landmark_file["image_path"].values
 
 image_list=[]
@@ -56,4 +57,6 @@ plot_multi_images(
     marker_kwargs=dict(cfg.PLT_KWS.MARKER),
     n_cols=5
 ).show()
+    
+
     
