@@ -165,10 +165,6 @@ def normalize_img_stack(images):
 #read template mask
 mask=cv2.imread('mask1.png',0)
 
-landmark_file=pd.read_csv(landmark, index_col="subject")
-landmark1=landmark_file.iloc[:, :-1].values
-list_of_paths=landmark_file["image_path"].values
-
 landmark_train=pd.read_csv('training_shortaxis.csv',index_col='patient_id')
 list_of_path_train=landmark_train["image_path"].values
 landmark_train=landmark_train.iloc[:,:-1].values
