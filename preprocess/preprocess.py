@@ -114,7 +114,7 @@ def rescale_img_stack(images, y, scale=0.5):
     for i in range(n_samples):
         stack_i = []
         n_phases = len(images[i])
-        for j in range(20):
+        for j in range(n_phases):
             img = images[i][j]
             img_rescale = rescale(img, scale, preserve_range=True)
             # preserve_range should be true otherwise the output will be normalised values
