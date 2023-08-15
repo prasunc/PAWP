@@ -13,13 +13,13 @@ from kale.pipeline.mpca_trainer import MPCATrainer
 
 
 
-# Load Preprocessed data
-x_train1=np.load('C:/Users/Prasun Tripathi/spyder/pythonProject/best/fourchamber/fc128train.npy', allow_pickle=True)
-x_test1=np.load('C:/Users/Prasun Tripathi/spyder/pythonProject/best/fourchamber/fc128test.npy', allow_pickle=True)
+# Load Preprocessed Four Chamber data
+x_train1=np.load('fc128train.npy', allow_pickle=True)
+x_test1=np.load('fc128test.npy', allow_pickle=True)
 
-
-x_train2=np.load('C:/Users/Prasun Tripathi/spyder/pythonProject/best/shortaxis/sx128train.npy', allow_pickle=True)
-x_test2=np.load('C:/Users/Prasun Tripathi/spyder/pythonProject/best/shortaxis/sx128test.npy', allow_pickle=True)
+# Load Preprocessed Short-axis data
+x_train2=np.load('sx128train.npy', allow_pickle=True)
+x_test2=np.load('sx128test.npy', allow_pickle=True)
 
 
 # Perform early fusion using FC and SX
@@ -30,12 +30,8 @@ x_test=np.concatenate([x_test1,x_test2],axis=1)
 
 # Load train and test labels 
 
-train_labels=np.load('C:/Users/Prasun Tripathi/spyder/pythonProject/best/fourchamber/train_labels.npy', allow_pickle=True)
-test_labels=np.load('C:/Users/Prasun Tripathi/spyder/pythonProject/best/fourchamber/test_labels.npy', allow_pickle=True)
-
-
-#train_labels=np.load('C:/Users/Prasun Tripathi/spyder/pythonProject/best/fourchamber/train_labels1.npy', allow_pickle=True)
-#test_labels=np.load('C:/Users/Prasun Tripathi/spyder/pythonProject/best/fourchamber/test_labels1.npy', allow_pickle=True)
+train_labels=np.load('train_labels.npy', allow_pickle=True)
+test_labels=np.load('test_labels.npy', allow_pickle=True)
 
 
 x_train = np.concatenate([x_train[i].reshape((1,) + x_train[i].shape) for i in range(len(x_train))], axis=0)
