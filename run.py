@@ -52,7 +52,7 @@ trainer = MPCATrainer(classifier="linear_svc",classifier_param_grid={"C": [0.000
 trainer.fit(x_train, train_labels)
 
 y_pred = trainer.predict(x_test)
-y_score = trainer.decision_function(x_test1)
+y_score = trainer.decision_function(x_test)
 
 #f1=f1_score(test_labels, y_pred,average = 'weighted')
 
