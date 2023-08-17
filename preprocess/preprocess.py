@@ -213,7 +213,7 @@ training_img_masked = mask_img_stack(training_img_reg.copy(), mask)
 
 training_img_norm = normalize_img_stack(training_img_masked.copy())
 
-# Rescale scans to create diffeterent resolutions such as 128X28, 64X64, etc.
+# Rescale scans to create different resolutions such as 128X28, 64X64, etc.
 
 training_img_rescaled = rescale_img_stack(training_img_norm.copy(), train_labels, scale=0.125)
 
@@ -244,8 +244,8 @@ testing_img_rescaled = rescale_img_stack(testing_img_norm.copy(), test_labels, s
 
 
 
-x_train = np.concatenate([training_img_rescaled[i].reshape((1,) + training_img_rescaled[i].shape) for i in range(len(training_img_rescaled))], axis=0)
-x_test = np.concatenate([testing_img_rescaled[i].reshape((1,) + testing_img_rescaled[i].shape) for i in range(len(testing_img_rescaled))], axis=0)
+#x_train = np.concatenate([training_img_rescaled[i].reshape((1,) + training_img_rescaled[i].shape) for i in range(len(training_img_rescaled))], axis=0)
+#x_test = np.concatenate([testing_img_rescaled[i].reshape((1,) + testing_img_rescaled[i].shape) for i in range(len(testing_img_rescaled))], axis=0)
 
 
 #Save Preprocessed data
