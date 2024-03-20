@@ -7,7 +7,7 @@ Affiliation: University of Sheffield, UK
 
 Conference Name: MICCAI 2023
 
-Preprint Link: https://doi.org/10.48550/arXiv.2303.07540
+Paper Link: https://link.springer.com/chapter/10.1007/978-3-031-43990-2_20 
 
 # Proposed Pipeline
 ![](images/i1.PNG)
